@@ -1,0 +1,210 @@
+/* Reset برخی استایل‌های پیش‌فرض */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تنظیمات کلی بدنه */
+body {
+    font-family: 'Vazir', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* فونت فارسی */
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f4f4f4;
+    direction: rtl;
+    text-align: justify;
+    padding: 20px;
+}
+
+/* هدر */
+header {
+    background-color: #ff4757; /* قرمز */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px; /* گوشه‌های گرد */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* سایه نرم */
+    margin-bottom: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* سایه متن */
+    letter-spacing: 1px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .cart-btn {
+    font-family: 'Vazir', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 8px; /* گوشه‌های گرد */
+    transition: background 0.3s ease, transform 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.login-btn:hover, .cart-btn:hover {
+    background: #2ed573; /* سبز */
+    transform: scale(1.05);
+}
+
+.login-btn:active, .cart-btn:active {
+    background: #2ed573; /* سبز */
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 15px; /* گوشه‌های گرد */
+}
+
+/* تب‌های اصلی */
+.category-tabs {
+    background: #2ed573; /* سبز */
+    padding: 15px 0;
+    border-radius: 12px; /* گوشه‌های گرد */
+    margin-bottom: 20px;
+}
+
+.category-tabs ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.category-tabs li {
+    position: relative;
+    padding: 10px 0;
+}
+
+.category-tabs a {
+    font-family: 'Vazir', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category-tabs a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.category-tabs .active a {
+    background: #ff4757; /* قرمز */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* تب‌های فرعی */
+.sub-tabs {
+    background: #ff4757; /* قرمز */
+    padding: 10px 0;
+    border-radius: 10px; /* گوشه‌های گرد */
+    margin-bottom: 20px;
+}
+
+.sub-tabs ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.sub-tabs li {
+    position: relative;
+    padding: 5px 0;
+}
+
+.sub-tabs a {
+    font-family: 'Vazir', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sub-tabs a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.sub-tabs .active a {
+    background: #2ed573; /* سبز */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* محتوای تب‌ها */
+.tab-content, .sub-tab-content {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.tab-pane, .sub-tab-pane {
+    display: none;
+}
+
+.tab-pane.active, .sub-tab-pane.active {
+    display: block;
+}
+
+.tab-content h2, .sub-tab-content h3 {
+    font-family: 'Vazir', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content p, .sub-tab-content p {
+    font-family: 'Vazir', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* انیمیشن‌ها */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header h1 {
+    animation: fadeIn 2s ease-in-out;
+}
