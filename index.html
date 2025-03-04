@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakShop | اسنک شاپ</title>
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- هدر -->
+    <header>
+        <div class="header-content">
+            <h1>اسنک شاپ</h1>
+            <div class="header-buttons">
+                <a href="#" class="login-btn">ورود</a>
+                <a href="#" class="cart-btn">سبد خرید</a>
+            </div>
+        </div>
+        <img src="banner.png" alt="بنر رستوران" class="banner">
+    </header>
+
+    <!-- تب‌های اصلی -->
+    <nav class="category-tabs">
+        <ul id="main-tabs">
+            <li><a href="#restaurant-info">اطلاعات رستوران</a></li>
+            <li class="active"><a href="#order-menu">منوی سفارش</a></li>
+        </ul>
+    </nav>
+
+    <!-- تب‌های فرعی -->
+    <nav class="sub-tabs">
+        <ul id="sub-tabs">
+            <li class="active"><a href="#misc">متفرقه</a></li>
+            <li><a href="#drinks">نوشیدنی</a></li>
+            <li><a href="#cold-food">غذای سرد</a></li>
+            <li><a href="#hot-food">غذای گرم</a></li>
+            <li><a href="#kilo-food">کیلویی</a></li>
+            <li><a href="#premium-food">پریمیوم</a></li>
+        </ul>
+    </nav>
+
+    <!-- محتوای تب‌ها -->
+    <div class="tab-content">
+        <div id="restaurant-info" class="tab-pane">
+            <h2>اطلاعات رستوران</h2>
+            <p>این بخش شامل اطلاعات رستوران است.</p>
+        </div>
+    </div>
+
+    <div class="sub-tab-content">
+        <div id="misc" class="sub-tab-pane active">
+            <h3>متفرقه</h3>
+            <p>این بخش شامل آیتم‌های متفرقه است.</p>
+        </div>
+        <div id="drinks" class="sub-tab-pane">
+            <h3>نوشیدنی</h3>
+            <p>این بخش شامل نوشیدنی‌ها است.</p>
+        </div>
+        <div id="cold-food" class="sub-tab-pane">
+            <h3>غذای سرد</h3>
+            <p>این بخش شامل غذای سرد است.</p>
+        </div>
+        <div id="hot-food" class="sub-tab-pane">
+            <h3>غذای گرم</h3>
+            <p>این بخش شامل غذای گرم است.</p>
+        </div>
+        <div id="kilo-food" class="sub-tab-pane">
+            <h3>کیلویی</h3>
+            <p>این بخش شامل غذای کیلویی است.</p>
+        </div>
+        <div id="premium-food" class="sub-tab-pane">
+            <h3>پریمیوم</h3>
+            <p>این بخش شامل غذای پریمیوم است.</p>
+        </div>
+    </div>
+
+    <!-- اسکریپت JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
